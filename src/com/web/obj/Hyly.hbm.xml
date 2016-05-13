@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Hyly" 
+    table="HYLY"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="HYLY"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="hyname"
+        type="java.lang.String"
+        column="HYNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYID"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="fromname"
+        type="java.lang.String"
+        column="FROMNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="FROMNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="fromid"
+        type="java.lang.Long"
+        column="FROMID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="FROMID"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="content"
+        type="java.lang.String"
+        column="CONTENT"
+        length="200"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CONTENT"
+            length="200"
+        </meta>    
+    </property>
+    <property
+        name="lytime"
+        type="java.sql.Timestamp"
+        column="LYTIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LYTIME"
+            length="7"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

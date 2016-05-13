@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.IpLog" 
+    table="IP_LOG"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="IP_LOG"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="userid"
+        type="java.lang.Long"
+        column="USERID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERID"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="username"
+        type="java.lang.String"
+        column="USERNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="isadmin"
+        type="java.lang.Integer"
+        column="ISADMIN"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ISADMIN"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="userip"
+        type="java.lang.Long"
+        column="USERIP"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERIP"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="userstrip"
+        type="java.lang.String"
+        column="USERSTRIP"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERSTRIP"
+            length="20"
+        </meta>    
+    </property>
+    <property
+        name="logintime"
+        type="java.sql.Timestamp"
+        column="LOGINTIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LOGINTIME"
+            length="7"
+        </meta>    
+    </property>
+    <property
+        name="logouttime"
+        type="java.sql.Timestamp"
+        column="LOGOUTTIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LOGOUTTIME"
+            length="7"
+        </meta>    
+    </property>
+    <property
+        name="staytime"
+        type="java.lang.Long"
+        column="STAYTIME"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="STAYTIME"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="logintimestr"
+        type="java.lang.String"
+        column="LOGINTIMESTR"
+        length="17"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LOGINTIMESTR"
+            length="17"
+        </meta>    
+    </property>
+    <property
+        name="sessionid"
+        type="java.lang.String"
+        column="SESSIONID"
+        length="35"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SESSIONID"
+            length="35"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

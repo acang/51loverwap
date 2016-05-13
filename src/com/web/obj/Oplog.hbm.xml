@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Oplog" 
+    table="OPLOG"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="OPLOG"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYID"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="hyname"
+        type="java.lang.String"
+        column="HYNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="adid"
+        type="java.lang.Long"
+        column="ADID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ADID"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="adname"
+        type="java.lang.String"
+        column="ADNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ADNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="opdate"
+        type="java.sql.Timestamp"
+        column="OPDATE"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="OPDATE"
+            length="7"
+        </meta>    
+    </property>
+    <property
+        name="opdes"
+        type="java.lang.String"
+        column="OPDES"
+        length="200"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="OPDES"
+            length="200"
+        </meta>    
+    </property>
+    <property
+        name="optype"
+        type="java.lang.Integer"
+        column="OPTYPE"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="OPTYPE"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="photoname"
+        type="java.lang.String"
+        column="PHOTONAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="PHOTONAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="contentid"
+        type="java.lang.Long"
+        column="CONTENTID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CONTENTID"
+            length="10"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.UserReceiveSet" 
+    table="USER_RECEIVE_SET"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="USER_RECEIVE_SET"
+    </meta>
+
+    <id
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="HYID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="receiveyesno"
+        type="int"
+        column="RECEIVE_YES_NO"
+        not-null="true"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="RECEIVE_YES_NO"
+            length="2"
+            not-null="true"
+        </meta>    
+    </property>
+	
+	<property
+        name="receivetype"
+        type="int"
+        column="RECEIVE_TYPE"
+        not-null="true"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="RECEIVE_TYPE"
+            length="2"
+            not-null="true"
+        </meta>    
+    </property>
+    
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

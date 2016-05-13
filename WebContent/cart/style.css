@@ -1,0 +1,78 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 170%;
+	color: #666666;
+	margin: 0px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+a {
+	font-size: 14px;
+	color: #DF1F2E;
+}
+a:visited {
+	color: #DF1F2E;
+	text-decoration: none;
+}
+a:hover {
+	color: #DF1F2E;
+	text-decoration: none;
+}
+a:active {
+	color: #DF1F2E;
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none;
+}
+a.link01:link {
+	color: blue;
+	text-decoration: underline;
+	font-size: 12px;
+}
+a.link01:visited {
+	color: #087CC0;
+	text-decoration: underline;
+	font-size: 12px;
+}
+a.link01:hover {
+	color: #FF0000;
+	text-decoration: none;
+	font-size: 12px;
+}
+.bk01 {
+	border-top-width: 6px;
+	border-top-style: solid;
+	border-top-color: #017C7C;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.tit01 {
+	font-size: 14px;
+}
+.tit02 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #DF1F2E;
+}
+.bk02 {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #C1C1C1;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+}
+.bk03 {
+	border: 1px solid #017C7C;
+	padding: 6px;
+}
+.tit04 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.UserInfoSendReply" 
+    table="USERINFO_SEND_REPLY"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="USERINFO_SEND_REPLY"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+    
+    <property
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+        not-null="true"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYID"
+            length="10"
+            not-null="true"
+        </meta>    
+    </property>
+    
+    <property
+        name="username"
+        type="java.lang.String"
+        column="USERNAME"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERNAME"
+            length="50"
+            not-null="true"
+        </meta>    
+    </property>
+    
+     <property
+        name="content"
+        type="java.lang.String"
+        column="CONTENT"
+        not-null="false"
+        length="5000"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CONTENT"
+            length="2000"
+            not-null="false"
+        </meta>    
+    </property>
+    
+	<property
+        name="hdate"
+        type="java.sql.Timestamp"
+        column="HDATE"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HDATE"
+        </meta>    
+    </property>
+
+    <property
+        name="sendorreply"
+        type="int"
+        column="SENDORREPLY"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SENDORREPLY"
+            length="1"
+            not-null="true"
+        </meta>    
+    </property>
+	
+	 <property
+        name="mobileoremailc"
+        type="java.lang.String"
+        column="MOBILEOREMAILC"
+        not-null="false"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MOBILEOREMAILC"
+            length="100"
+            not-null="false"
+        </meta>    
+    </property>
+	
+	<property
+        name="mobileoremail"
+        type="int"
+        column="MOBILEOREMAIL"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MOBILEOREMAIL"
+            length="1"
+            not-null="true"
+        </meta>    
+    </property>
+    
+    <property
+        name="sender"
+        type="java.lang.String"
+        column="SENDER"
+        not-null="false"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SENDER"
+            length="50"
+            not-null="false"
+        </meta>    
+    </property>
+    
+    <property
+        name="sendtype"
+        type="int"
+        column="SENDTYPE"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SENDTYPE"
+            length="1"
+            not-null="true"
+        </meta>    
+    </property>
+    
+     <property
+        name="status"
+        type="int"
+        column="STATUS"
+        not-null="true"
+        length="4"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="STATUS"
+            length="4"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="sendobject"
+        type="int"
+        column="SENDOBJECT"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SENDOBJECT"
+            length="1"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="sendnumber"
+        type="int"
+        column="SENDNUMBER"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SENDNUMBER"
+            length="1"
+            not-null="true"
+        </meta>    
+    </property>
+    
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Uservisit" 
+    table="USER_VISIT"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="USER_VISIT"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="hyid"
+        type="long"
+        column="HYID"
+        not-null="true"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYID"
+            length="20"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="vtime"
+        type="java.sql.Timestamp"
+        column="VTIME"
+        length="11"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column=""VTIME""
+            length="11"
+        </meta>    
+    </property>
+    <property
+        name="vurl"
+        type="java.lang.String"
+        column="VURL"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="VURL"
+            length="100"
+        </meta>    
+    </property>
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

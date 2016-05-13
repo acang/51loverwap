@@ -1,0 +1,82 @@
+html { background:url(../skin/html_bg.jpg) repeat-x;}
+body { margin:0 auto; padding:0; height:auto; background:url(../skin/body_bg.jpg) repeat-y center top; _background:none; color:#666; font:12px/24px '宋体'; }
+div, form, ul, ol, li, span, p, dl, dt, dd, img { margin:0; padding:0; border:0; }
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-size:14px; font-weight:normal;  }
+ul, ol, li { list-style:none }
+table, td, input, textarea { font-size:14px }
+a{color:#000;text-decoration:none;-webkit-transition:color 0.4s ease;-moz-transition:color 0.4s ease;-o-transition:color 0.4s ease;transition:color 0.4s ease}
+a:visited{text-decoration:none}
+a:hover{color:#1f5b7f;text-decoration:none;-webkit-transition:color 0.2s ease;-moz-transition:color 0.2s ease;-o-transition:color 0.2s ease;transition:color 0.2s ease}
+a:focus{outline:none;}
+*:focus {outline: none;}
+img { border:none;} 
+.wrapper1250 { position:relative; width:1100px; margin:0 auto; }
+.topbar_bg { height:25px; background:#0b2848;}
+.topbar { font:14px/25px "宋体"; color:#fff;}
+.topbar a.baise { color:#fff;}
+.topbar a.huangse { color:#ff0;}
+.topbar p { position:absolute; top:0px; right:0px; width:500px; height:25px;}
+.topbar .tel { float:right; width:215px; height:25px; background:url(../skin/ico.gif) no-repeat 60px 0;}
+.topbar .wap { float:right; text-align:right; width:158px; height:25px; background:url(../skin/ico.gif) no-repeat 95px -27px;}
+.head_bg { height:138px; background:#4888c8 url(../skin/head_bg.jpg) no-repeat center top;}
+.head { height:138px;}
+.head .logo { position:absolute; top:36px; left:0px; width:210px; height:65px; background:url(../skin/logo.png) no-repeat;}
+.head .logo a { display:block; height:65px;}
+
+.nav_bg { height:45px; background:#21648f; z-index:9999;}
+.nav_bg ul { position:absolute; top:0px; left:0px; width:1100px; height:45px;}
+.nav_bg ul li { position:relative; float:left; width:122px; height:45px; font: bold 16px/45px "微软雅黑"; text-align:center;}
+.nav_bg ul li a { display:block; height:45px; color:#fff;}
+.nav_bg ul li a:hover { color:#fff; background:#185983;}
+.nav_bg ul li a.current { color:#fff; background:#185983;}
+.nav_bg ul li div { position:absolute; top:35px; left:0px; width:110px; padding-top:10px; text-align:left; border-bottom:1px solid #ddd; display:none;}
+.nav_bg ul li div span { display:block; background:#fff;}
+.nav_bg ul li div span a { display:block; height:35px; text-align:center; border:1px solid #ddd; border-bottom:none; font:12px/35px "宋体";}
+.nav_bg ul li div span a:hover { background:#efefef;}
+.nav_bg ul li div span dl { font:12px/35px "宋体";}
+.nav_bg ul li div span dl dd a { display:block; height:35px; padding-left:23px; border-top:none; color:#666;}
+.nav_bg ul li div span dl dd a:hover { color:#fff;}
+
+.notice_box { height:40px; font:16px/40px "宋体"; margin-top:10px; background:url(../skin/gg.jpg) no-repeat;}
+.notice_box strong { float:left; margin-left:60px; width:160px; color:#1b7bad;}
+.notice_box .marquee_box { float:left; width:700px;}
+
+.search_box { height:40px; font:14px/40px "宋体"; margin-top:8px; background:#e2f3fa;}
+.search_box .txt01 { float:left; width:130px; height:40px; font: bold 14px/40px "宋体"; text-align:right; color:#f60;}
+.search_box .gjss { color:#1950a3; text-decoration:underline;}
+.search_box form { _margin-top:10px;}
+.search_box label { margin:0 5px;}
+.search_box .ljss_btn { display:inline-block; width:70px; height:22px;background:#21648f ; color:#fff; border:none; border-radius:3px;}
+.search_box .ljss_btn:hover { background:#f60; color:#fff; border:none; border-radius:3px;}
+
+.footernav_bg { background:#21648f; height:45px; margin-top:10px;}
+.footernav { height:45px; font:14px/45px "宋体"; text-align:center; color:#fff;}
+.footernav a { color:#fff;}
+.footer_bg { height:125px; background:#417eab;}
+.footer_bg .footer { height:125px;}
+.footer_bg .footer ul { position:absolute; top:20px; left:100px; width:1000px; height:80px;}
+.footer_bg .footer ul li { float:left; width:300px; height:80px; font:12px/20px "宋体"; color:#fff;}
+.footer_bg .footer ul li a { color:#d7f3ca; text-decoration:underline;}
+
+/* 居中分页*/
+#page { margin-top:10px; height:36px; padding:10px 0 5px 0;  font:14px/36px Arial, Helvetica, sans-serif; text-align:center;}
+#page a { display:inline-block;  margin-right:5px; width:36px; height:36px; background:#f5f5f5; -webkit-transition: background .3s cubic-bezier(0.39, 0.575, 0.565, 1); -o-transition: background .3s cubic-bezier(0.39, 0.575, 0.565, 1); -moz-transition: background .3s cubic-bezier(0.39, 0.575, 0.565, 1); transition:background .3s cubic-bezier(0.39, 0.575, 0.565, 1); border:none; }
+#page a:hover, #page a.current { background-color:#21648f;color:#fff; }
+#page a.current { color:#fff; }
+#page .page-prev { background:url(../skin/arrow.png) no-repeat 0px -36px; }
+#page .page-prev:hover { background:#21648f url(../skin/arrow.png) no-repeat -36px -36px; text-decoration:none; }
+#page .page-next { background:url(../skin/arrow.png) no-repeat -36px 0px; }
+#page .page-next:hover { background:#21648f url(../skin/arrow.png) no-repeat 0px 0px; text-decoration:none; }
+#page .next_group { width:80px;}
+#page .prev_group { width:80px;}
+
+#float_box { position:fixed; bottom:5px; right:5px; width:40px; height:124px; _display:none;}
+#float_box .erweima_ico { position:relative; display:block; width:40px; height:40px; background:url(../skin/ico.gif) no-repeat -360px 0px; margin-bottom:1px;}
+#float_box .erweima_ico:hover {background:url(../skin/ico.gif) no-repeat -440px 0px;}
+#float_box .erweima_ico span { position:absolute; display:block; bottom:-40px; right:50px; width:175px; height:40px; padding-top:175px; text-align:center; background:#fff url(../skin/erweima.jpg) no-repeat; border:1px solid #ddd; color:#333;}
+#float_box .erweima_ico span { visibility:hidden; opacity:0; -webkit-transform:perspective(600px) rotateY(360deg); -webkit-transform-origin:50% 100%; -webkit-transition:all .35s; -moz-transform:perspective(180px) rotateY(180deg); -moz-transform-origin:50% 100%; -moz-transition:all .35s; transform:perspective(600px) rotateY(180deg); transform-origin:50% 100%; transition:all .35s}
+#float_box .erweima_ico:hover span { visibility:visible; opacity:1; -webkit-transform:perspective(600px) rotateY(360deg); -webkit-transform-origin:50% 100%; -webkit-transition:all .35s; -moz-transform:perspective(600px) rotateY(360deg); -moz-transform-origin:50% 100%; -moz-transition:all .35s; transform:perspective(600px) rotateY(360deg); transform-origin:50% 100%; transition:all .35s}
+#float_box .sina_ico { display:block; width:40px; height:40px; background:url(../skin/ico.gif) no-repeat -360px -41px;margin-bottom:1px;}
+#float_box .sina_ico:hover {background:url(../skin/ico.gif) no-repeat -440px -41px;}
+#float_box .top_ico { display:block; width:40px; height:40px; background:url(../skin/ico.gif) no-repeat -360px -82px;}
+#float_box .top_ico:hover {background:url(../skin/ico.gif) no-repeat -440px -82px;}

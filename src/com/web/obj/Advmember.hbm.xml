@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Advmember" 
+    table="ADV_MEMBER"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="ADV_MEMBER"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="advmembername"
+        type="java.lang.String"
+        column="ADV_MEMBER_NAME"
+        not-null="true"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ADV_MEMBER_NAME"
+            length="20"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="advmembercode"
+        type="java.lang.Integer"
+        column="ADV_MEMBER_CODE"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ADV_MEMBER_CODE"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="flag"
+        type="java.lang.Integer"
+        column="FLAG"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="FLAG"
+            length="2"
+        </meta>    
+    </property>
+    
+    <property
+        name="createtime"
+        type="java.sql.Timestamp"
+        column="CREATETIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CREATETIME"
+            length="7"
+        </meta>    
+    </property>
+    
+    <property
+        name="oper"
+        type="java.lang.String"
+        column="OPER"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="OPER"
+            length="50"
+        </meta>    
+    </property>
+    
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Bugrecord" 
+    table="BUGRECORD"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="BUGRECORD"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="baseid"
+        type="java.lang.Long"
+        column="BASEID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="BASEID"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="jldate"
+        type="java.sql.Timestamp"
+        column="JLDATE"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="JLDATE"
+            length="7"
+        </meta>    
+    </property>
+    <property
+        name="tcr"
+        type="java.lang.String"
+        column="TCR"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TCR"
+            length="20"
+        </meta>    
+    </property>
+    <property
+        name="wtdes"
+        type="java.lang.String"
+        column="WTDES"
+        length="1000"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="WTDES"
+            length="1000"
+        </meta>    
+    </property>
+    <property
+        name="yyfx"
+        type="java.lang.String"
+        column="YYFX"
+        length="1000"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="YYFX"
+            length="1000"
+        </meta>    
+    </property>
+    <property
+        name="clqk"
+        type="java.lang.String"
+        column="CLQK"
+        length="1000"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CLQK"
+            length="1000"
+        </meta>    
+    </property>
+    <property
+        name="jjqk"
+        type="java.lang.String"
+        column="JJQK"
+        length="1000"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="JJQK"
+            length="1000"
+        </meta>    
+    </property>
+    <property
+        name="wtfl"
+        type="java.lang.String"
+        column="WTFL"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="WTFL"
+            length="20"
+        </meta>    
+    </property>
+    <property
+        name="xgzt"
+        type="java.lang.String"
+        column="XGZT"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="XGZT"
+            length="20"
+        </meta>    
+    </property>
+    <property
+        name="fzr"
+        type="java.lang.String"
+        column="FZR"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="FZR"
+            length="20"
+        </meta>    
+    </property>
+    <property
+        name="xgqk"
+        type="java.lang.String"
+        column="XGQK"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="XGQK"
+            length="20"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

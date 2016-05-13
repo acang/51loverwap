@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Vipuserrecord" 
+    table="VIPUSERRECORD"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="VIPUSERRECORD"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="hyid"
+        type="long"
+        column="HYID"
+        not-null="true"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYID"
+            length="10"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="sqhy"
+        type="java.lang.String"
+        column="SQHY"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SQHY"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="yyxq"
+        type="java.sql.Timestamp"
+        column="YYXQ"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="YYXQ"
+            length="7"
+        </meta>    
+    </property>
+    <property
+        name="zzsj"
+        type="java.sql.Timestamp"
+        column="ZZSJ"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ZZSJ"
+            length="7"
+        </meta>    
+    </property>
+    <property
+        name="czry"
+        type="java.lang.String"
+        column="CZRY"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CZRY"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="czsj"
+        type="java.sql.Timestamp"
+        column="CZSJ"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CZSJ"
+            length="7"
+        </meta>    
+    </property>
+    <property
+        name="httpurl"
+        type="java.lang.String"
+        column="HTTPURL"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HTTPURL"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="name"
+        type="java.lang.String"
+        column="NAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="NAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="transamt"
+        type="java.lang.Double"
+        column="TRANSAMT"
+        length="13"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TRANSAMT"
+            length="13"
+        </meta>    
+    </property>
+    <property
+        name="serviceyear"
+        type="java.lang.Long"
+        column="SERVICEYEAR"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SERVICEYEAR"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="datetype"
+        type="java.lang.Integer"
+        column="DATETYPE"
+        length="1"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="DATETYPE"
+            length="1"
+        </meta>    
+    </property>
+    <property
+        name="simplename"
+        type="java.lang.String"
+        column="SIMPLENAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SIMPLENAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="sqdj"
+        type="java.lang.String"
+        column="SQDJ"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SQDJ"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="flag"
+        type="java.lang.Integer"
+        column="FLAG"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="FLAG"
+            length="2"
+        </meta>    
+    </property>
+	<property
+        name="area"
+        type="java.lang.String"
+        column="AREA"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="AREA"
+            length="20"
+        </meta>    
+    </property>
+	
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+<!--
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class
+    name="com.web.obj.Wtjd"
+    table="WTJD"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="WTJD"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="bianhao"
+        type="java.lang.String"
+        column="BIANHAO"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="BIANHAO"
+            length="10"
+        </meta>
+    </property>
+    <property
+        name="ask"
+        type="java.lang.String"
+        column="ASK"
+        length="200"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ASK"
+            length="200"
+        </meta>
+    </property>
+    <property
+        name="answer"
+        type="java.lang.Long"
+        column="ANSWER"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ANSWER"
+            length="10"
+        </meta>
+    </property>
+    <property
+        name="wttype"
+        type="java.lang.Integer"
+        column="WTTYPE"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="WTTYPE"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="stime"
+        type="java.sql.Timestamp"
+        column="stime"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="stime"
+            length="7"
+        </meta>
+    </property>
+    <property
+        name="islink"
+        type="java.lang.Integer"
+        column="ISLINK"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ISLINK"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="linkurl"
+        type="java.lang.String"
+        column="LINKURL"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LINKURL"
+            length="100"
+        </meta>
+    </property>
+    <!-- Associations -->
+
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping>
+<!--
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class
+    name="com.web.obj.Userinfo"
+    table="USERINFO"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="USERINFO"
+    </meta>
+
+    <id
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="HYID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="username"
+        type="java.lang.String"
+        column="USERNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERNAME"
+            length="50"
+        </meta>
+    </property>
+    <property
+        name="lcname"
+        type="java.lang.String"
+        column="LCNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LCNAME"
+            length="50"
+        </meta>
+    </property>
+    <property
+        name="password"
+        type="java.lang.String"
+        column="PASSWORD"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="PASSWORD"
+            length="50"
+        </meta>
+    </property>
+    <property
+        name="ask"
+        type="java.lang.String"
+        column="ASK"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ASK"
+            length="100"
+        </meta>
+    </property>
+    <property
+        name="answer"
+        type="java.lang.String"
+        column="ANSWER"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ANSWER"
+            length="100"
+        </meta>
+    </property>
+    <property
+        name="sex"
+        type="java.lang.String"
+        column="SEX"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SEX"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="address"
+        type="java.lang.String"
+        column="ADDRESS"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ADDRESS"
+            length="50"
+        </meta>
+    </property>
+    <property
+        name="csdate"
+        type="java.sql.Timestamp"
+        column="CSDATE"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CSDATE"
+            length="7"
+        </meta>
+    </property>
+    <property
+        name="sx"
+        type="java.lang.String"
+        column="SX"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SX"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="xz"
+        type="java.lang.String"
+        column="XZ"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="XZ"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="sg"
+        type="java.lang.String"
+        column="SG"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SG"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="tz"
+        type="java.lang.String"
+        column="TZ"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TZ"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="fs"
+        type="java.lang.String"
+        column="FS"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="FS"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="whcd"
+        type="java.lang.String"
+        column="WHCD"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="WHCD"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="xgtz"
+        type="java.lang.String"
+        column="XGTZ"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="XGTZ"
+            length="50"
+        </meta>
+    </property>
+    <property
+        name="yyap"
+        type="java.lang.String"
+        column="YYAP"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="YYAP"
+            length="50"
+        </meta>
+    </property>
+    <property
+        name="yx"
+        type="java.lang.String"
+        column="YX"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="YX"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="hyzk"
+        type="java.lang.String"
+        column="HYZK"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYZK"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="jyyx"
+        type="java.lang.Long"
+        column="JYYX"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="JYYX"
+            length="10"
+        </meta>
+    </property>
+    <property
+        name="zf"
+        type="java.lang.String"
+        column="ZF"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ZF"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="email"
+        type="java.lang.String"
+        column="EMAIL"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="EMAIL"
+            length="50"
+        </meta>
+    </property>
+    <property
+        name="oicq"
+        type="java.lang.String"
+        column="OICQ"
+        length="25"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="OICQ"
+            length="25"
+        </meta>
+    </property>
+    <property
+        name="sjtel"
+        type="java.lang.String"
+        column="SJTEL"
+        length="21"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SJTEL"
+            length="21"
+        </meta>
+    </property>
+    <property
+        name="tel"
+        type="java.lang.String"
+        column="TEL"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TEL"
+            length="50"
+        </meta>
+    </property>
+
+    <property
+            name="wx"
+            type="java.lang.String"
+            column="WX"
+            length="50"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="WX"
+            length="50"
+        </meta>
+    </property>
+
+    <property
+        name="flag"
+        type="java.lang.Integer"
+        column="FLAG"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="FLAG"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="tjsj"
+        type="java.sql.Timestamp"
+        column="TJSJ"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TJSJ"
+            length="7"
+        </meta>
+    </property>
+    <property
+        name="hots"
+        type="java.lang.Long"
+        column="HOTS"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HOTS"
+            length="10"
+        </meta>
+    </property>
+    <property
+        name="regtime"
+        type="java.sql.Timestamp"
+        column="REGTIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REGTIME"
+            length="7"
+        </meta>
+    </property>
+    <property
+        name="regtime3"
+        type="java.sql.Timestamp"
+        column="REGTIME3"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REGTIME3"
+            length="7"
+        </meta>
+    </property>
+    <property
+        name="regtime4"
+        type="java.sql.Timestamp"
+        column="REGTIME4"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REGTIME4"
+            length="7"
+        </meta>
+    </property>
+    <property
+        name="lasttime"
+        type="java.sql.Timestamp"
+        column="LASTTIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LASTTIME"
+            length="7"
+        </meta>
+    </property>
+    <property
+        name="regtime2"
+        type="java.sql.Timestamp"
+        column="REGTIME2"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REGTIME2"
+            length="7"
+        </meta>
+    </property>
+    <property
+        name="img"
+        type="java.lang.Integer"
+        column="IMG"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="IMG"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="setzt"
+        type="java.lang.Integer"
+        column="SETZT"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SETZT"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="shr"
+        type="java.lang.String"
+        column="SHR"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SHR"
+            length="20"
+        </meta>
+    </property>
+    <property
+        name="shqk"
+        type="java.lang.String"
+        column="SHQK"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SHQK"
+            length="20"
+        </meta>
+    </property>
+    <property
+        name="httpurl"
+        type="java.lang.String"
+        column="HTTPURL"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HTTPURL"
+            length="100"
+        </meta>
+    </property>
+    <property
+        name="httpip"
+        type="java.lang.String"
+        column="HTTPIP"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HTTPIP"
+            length="50"
+        </meta>
+    </property>
+    <property
+        name="isdel"
+        type="java.lang.Integer"
+        column="ISDEL"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ISDEL"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="vip"
+        type="java.lang.Integer"
+        column="VIP"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="VIP"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="s1"
+        type="java.lang.String"
+        column="S1"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="S1"
+            length="20"
+        </meta>
+    </property>
+    <property
+        name="s2"
+        type="java.lang.String"
+        column="S2"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="S2"
+            length="20"
+        </meta>
+    </property>
+    <property
+        name="s3"
+        type="java.lang.String"
+        column="S3"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="S3"
+            length="20"
+        </meta>
+    </property>
+    <property
+        name="lysize"
+        type="java.lang.Long"
+        column="LYSIZE"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LYSIZE"
+            length="4"
+        </meta>
+    </property>
+    <property
+        name="zzsj"
+        type="java.sql.Timestamp"
+        column="ZZSJ"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ZZSJ"
+            length="7"
+        </meta>
+    </property>
+
+    <property
+        name="zy"
+        type="java.lang.String"
+        column="zy"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="zy"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="isvcation"
+        type="java.lang.Long"
+        column="ISVCATION"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ISVCATION"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="vacsjtel"
+        type="java.lang.Integer"
+        column="VACSJTEL"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="VACSJTEL"
+            length="2"
+        </meta>
+    </property>
+     <property
+        name="vacemail"
+        type="java.lang.Integer"
+        column="VACEMAIL"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="VACEMAIL"
+            length="2"
+        </meta>
+    </property>
+    <property
+        name="shield"
+        type="java.lang.String"
+        column="SHIELD"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SHIELD"
+            length="20"
+        </meta>
+    </property>
+    <property
+        name="area"
+        type="java.lang.String"
+        column="AREA"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="AREA"
+            length="20"
+        </meta>    
+    </property>
+     <property
+        name="regtime5"
+        type="java.sql.Timestamp"
+        column="REGTIME5"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REGTIME5"
+            length="7"
+        </meta>
+    </property>
+    <property
+            name="important"
+            type="java.lang.Integer"
+            column="IMPORTANT"
+            length="2"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="IMPORTANT"
+            length="2"
+        </meta>
+    </property>
+    <!-- Associations -->
+
+
+</class>
+</hibernate-mapping>

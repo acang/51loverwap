@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Record" 
+    table="RECORD"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="RECORD"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="seename"
+        type="java.lang.String"
+        column="SEENAME"
+        not-null="false"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SEENAME"
+            length="50"
+            not-null="false"
+        </meta>    
+    </property>
+    <property
+        name="toseename"
+        type="java.lang.String"
+        column="TOSEENAME"
+        not-null="false"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TOSEENAME"
+            length="50"
+            not-null="false"
+        </meta>    
+    </property>
+   
+    <property
+        name="time"
+        type="java.sql.Timestamp"
+        column="TIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TIME"
+            length="7"
+        </meta>    
+    </property>
+    
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Bbsuser" 
+    table="BBSUSER"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="BBSUSER"
+    </meta>
+
+    <id
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="HYID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="username"
+        type="java.lang.String"
+        column="USERNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="lcname"
+        type="java.lang.String"
+        column="LCNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LCNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="grade"
+        type="java.lang.Long"
+        column="GRADE"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="GRADE"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="topics"
+        type="java.lang.Long"
+        column="TOPICS"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TOPICS"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="commend"
+        type="java.lang.Long"
+        column="COMMEND"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="COMMEND"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="resum"
+        type="java.lang.Long"
+        column="RESUM"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="RESUM"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="moneys"
+        type="java.lang.Long"
+        column="MONEYS"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MONEYS"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="regtime"
+        type="java.sql.Timestamp"
+        column="REGTIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REGTIME"
+            length="7"
+        </meta>    
+    </property>
+    <property
+        name="staytime"
+        type="java.lang.Long"
+        column="STAYTIME"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="STAYTIME"
+            length="10"
+        </meta>    
+    </property>
+
+    <property
+        name="deltopics"
+        type="java.lang.Long"
+        column="DELTOPICS"
+        length="10"
+        >
+    <meta attribute="field-description">
+        @hibernate.property
+        column="DELTOPICS"
+        length="10"
+    </meta>
+</property>
+
+    <property
+            name="delresum"
+            type="java.lang.Long"
+            column="DELRESUM"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="DELRESUM"
+            length="10"
+        </meta>
+    </property>
+
+    <property
+            name="topicsmoney"
+            type="java.lang.Long"
+            column="TOPICSMONEY"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="TOPICSMONEY"
+            length="10"
+        </meta>
+    </property>
+
+    <property
+            name="commendmoney"
+            type="java.lang.Long"
+            column="COMMENDMONEY"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="COMMENDMONEY"
+            length="10"
+        </meta>
+    </property>
+
+    <property
+            name="resummoney"
+            type="java.lang.Long"
+            column="RESUMMONEY"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="RESUMMONEY"
+            length="10"
+        </meta>
+    </property>
+    <property
+            name="moneynew"
+            type="java.lang.Long"
+            column="MONEYNEW"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="MONEYNEW"
+            length="10"
+        </meta>
+    </property>
+
+
+
+    <property
+            name="zans"
+            type="java.lang.Long"
+            column="ZANS"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="ZANS"
+            length="10"
+        </meta>
+    </property>
+    <property
+            name="zanmoney"
+            type="java.lang.Long"
+            column="ZANMONEY"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="ZANMONEY"
+            length="10"
+        </meta>
+    </property>
+
+    <property
+            name="replynum"
+            type="java.lang.Long"
+            column="REPLYNUM"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="REPLYNUM"
+            length="10"
+        </meta>
+    </property>
+
+    <property
+            name="replymoney"
+            type="java.lang.Long"
+            column="REPLYMONEY"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="REPLYMONEY"
+            length="10"
+        </meta>
+    </property>
+    <property
+            name="deltopicsmoney"
+            type="java.lang.Long"
+            column="DELTOPICSMONEY"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="DELTOPICSMONEY"
+            length="10"
+        </meta>
+    </property>
+    <property
+            name="topicsnew"
+            type="java.lang.Long"
+            column="TOPICSNEW"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="TOPICSNEW"
+            length="10"
+        </meta>
+    </property>
+    <property
+            name="resumnew"
+            type="java.lang.Long"
+            column="RESUMNEW"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="RESUMNEW"
+            length="10"
+        </meta>
+    </property>
+    
+    <property
+            name="sharenumber"
+            type="java.lang.Long"
+            column="SHARENUMBER"
+            length="10"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="SHARENUMBER"
+            length="10"
+        </meta>
+    </property>
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312" ?>
+    <!--环境配置-->
+
+
+
+<root>
+  <annexpath>http://www.51lover.org/upload/hyimg</annexpath>
+  <requestgetcode></requestgetcode>
+  <title>51</title>
+
+</root>

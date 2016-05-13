@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Hytj" 
+    table="HYTJ"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="HYTJ"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="myid"
+        type="java.lang.Long"
+        column="MYID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MYID"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="myname"
+        type="java.lang.String"
+        column="MYNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MYNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="tjid"
+        type="java.lang.Long"
+        column="TJID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TJID"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="tjname"
+        type="java.lang.String"
+        column="TJNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TJNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="tjdate"
+        type="java.sql.Timestamp"
+        column="TJDATE"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TJDATE"
+            length="7"
+        </meta>    
+    </property>
+
+
+ <property
+        name="ischeck"
+        type="java.lang.String"
+        column="ISCHECK"
+        length="40"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ISCHECK"
+            length="40"
+        </meta>    
+    </property>
+    
+     <property
+        name="tjtype"
+        type="java.lang.String"
+        column="TJTYPE"
+        length="40"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TJTYPE"
+            length="40"
+        </meta>    
+    </property>
+    
+     <property
+        name="isphone"
+        type="java.lang.String"
+        column="ISPHONE"
+        length="40"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ISPHONE"
+            length="40"
+        </meta>    
+    </property>
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

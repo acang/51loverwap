@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Userqiubo" 
+    table="USER_QIUBO"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="USER_QIUBO"
+    </meta>
+
+    <id
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="HYID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="qiubo_number"
+        type="java.lang.Integer"
+        column="QIUBO_NUMBER"
+        length="4"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="QIUBO_NUMBER"
+            length="4"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

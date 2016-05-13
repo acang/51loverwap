@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.SendSms" 
+    table="SEND_SMS"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="SEND_SMS"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="mobileNumber"
+        type="java.lang.String"
+        column="MOBILE_NUMBER"
+        not-null="true"
+        length="200"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MOBILE_NUMBER"
+            length="200"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="reportStatus"
+        type="long"
+        column="REPORT_STATUS"
+        not-null="true"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REPORT_STATUS"
+            length="10"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="rerrorCode"
+        type="java.lang.String"
+        column="R_ERROR_CODE"
+        length="40"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="R_ERROR_CODE"
+            length="40"
+        </meta>    
+    </property>
+    <property
+        name="submitDate"
+        type="java.sql.Timestamp"
+        column="SUBMIT_DATE"
+        length="11"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SUBMIT_DATE"
+            length="11"
+        </meta>    
+    </property>
+    <property
+        name="sysSubmitDate"
+        type="java.sql.Timestamp"
+        column="SYS_SUBMIT_DATE"
+        length="11"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SYS_SUBMIT_DATE"
+            length="11"
+        </meta>    
+    </property>
+    <property
+        name="receiveDate"
+        type="java.sql.Timestamp"
+        column="RECEIVE_DATE"
+        length="11"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="RECEIVE_DATE"
+            length="11"
+        </meta>    
+    </property>
+    <property
+        name="veryCode"
+        type="java.lang.String"
+        column="VERY_CODE"
+        length="6"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="VERY_CODE"
+            length="6"
+        </meta>    
+    </property>
+    
+    <property
+        name="userIp"
+        type="java.lang.String"
+        column="USERIP"
+        length="200"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERIP"
+            length="200"
+        </meta>    
+    </property>
+
+    <property
+        name="regstatus"
+        type="long"
+        column="REGSTATUS"
+        not-null="false"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REGSTATUS"
+            length="10"
+            not-null="false"
+        </meta>
+    </property>
+    <property
+        name="comp"
+        type="java.lang.Long"
+        column="COMP"
+        not-null="false"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="COMP"
+            length="10"
+            not-null="false"
+        </meta>
+    </property>
+    <property
+        name="vcation"
+        type="java.lang.Long"
+        column="VCATION"
+        not-null="false"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="VCATION"
+            not-null="false"
+            length="10"
+        </meta>
+    </property>
+    
+    <property
+        name="returnStr"
+        type="java.lang.String"
+        column="RETURNSTR"
+        length="20"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="RETURNSTR"
+            length="20"
+        </meta>    
+    </property>
+    
+    <property
+        name="fromclass"
+        type="int"
+        column="FROMCLASS"
+        not-null="true"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="FROMCLASS"
+            length="2"
+            not-null="true"
+        </meta>    
+    </property>
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

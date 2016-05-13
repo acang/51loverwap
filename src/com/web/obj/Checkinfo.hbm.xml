@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+
+<class 
+    name="com.web.obj.Checkinfo" 
+    table="CHECKINFO"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="CHECKINFO"
+    </meta>
+    
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+        </meta>
+        <generator class="assigned" />
+    </id>
+    
+    <property
+        name="checkerid"
+        type="java.lang.Long"
+        column="CHECKERID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CHECKERID"
+            length="10"
+        </meta>    
+    </property>
+    
+     <property
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYID"
+            length="10"
+        </meta>    
+    </property>
+    
+    <property
+        name="status"
+        type="java.lang.String"
+        column="STATUS"
+        length="200"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="STATUS"
+            length="200"
+        </meta>    
+    </property>
+
+    <property
+        name="hyname"
+        type="java.lang.String"
+        column="HYNAME"
+        length="40"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="HYNAME"
+            length="40"
+        </meta>    
+    </property>
+    <property
+        name="lcname"
+        type="java.lang.String"
+        column="LCNAME"
+        length="40"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LCNAME"
+            length="40"
+        </meta>    
+    </property>
+    <property
+        name="checkername"
+        type="java.lang.String"
+        column="CHECKERNAME"
+        length="40"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CHECKERNAME"
+            length="40"
+        </meta>    
+    </property>
+   
+   <property
+        name="time"
+        type="java.sql.Timestamp"
+        column="TIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="TIME"
+            length="7"
+        </meta>
+    </property>
+    
+ <property
+        name="nexttime"
+        type="java.sql.Timestamp"
+        column="NEXTTIME"
+        length="7"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="NEXTTIME"
+            length="7"
+        </meta>
+    </property>
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

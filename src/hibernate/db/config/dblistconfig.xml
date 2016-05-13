@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!--dbconfig one db -->
+    <dbconfig>
+        <!--  映射数据库名字-->
+        <name>defaultdb</name>
+
+        <!-- hibernate配置文件，在只有一个数据库的时候可以不用这个配置。不配置的话使用属性文件的连接配置-->
+        <hbmxmlfile></hbmxmlfile>
+
+        <!-- 映射文件路径是相对类路径-->
+        <filelist>
+            <!--
+            <file>/com/w/xt_function.hbm.xml</file>
+            <file>/com/w/xt_detail.hbm.xml</file>
+            -->
+            <!--
+            <file>/com/w/citmail/obj/Test.hbm.xml</file>
+            -->
+        </filelist>
+
+        <!-- 映射类列表-->
+        <classlist>
+            <!--
+            <class>com.w/xt_function.class</class>
+            <class>com.w/xt_detail.class</class>
+            -->
+        </classlist>
+
+        <!-- 映射包名 -->
+        <packagelist>
+
+            <package></package>
+            <package>/com/web/obj</package>
+        </packagelist>
+    </dbconfig>
+
+    <dbconfig>
+        <!--  映射数据库名字-->
+        <name>htdb</name>
+
+        <!-- hibernate配置文件，在只有一个数据库的时候可以不用这个配置。不配置的话使用属性文件的连接配置-->
+        <hbmxmlfile>/sms.hibernate.config.xml</hbmxmlfile>
+
+        <!-- 映射文件路径是相对类路径-->
+        <filelist>
+            <!--
+            <file>/com/w/xt_function.hbm.xml</file>
+            <file>/com/w/xt_detail.hbm.xml</file>
+            -->
+            <!--
+            <file>/com/w/w/obj/Test.hbm.xml</file>
+            -->
+        </filelist>
+
+        <!-- 映射类列表-->
+        <classlist>
+            <!--
+            <class>com.w/xt_function.class</class>
+            <class>com.w/xt_detail.class</class>
+            -->
+        </classlist>
+
+        <!-- 映射包名 -->
+        <packagelist>
+
+            <package></package>
+            <package></package>
+        </packagelist>
+    </dbconfig>
+</root>

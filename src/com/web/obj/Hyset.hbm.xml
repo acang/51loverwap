@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Hyset" 
+    table="HYSET"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="HYSET"
+    </meta>
+
+    <id
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="HYID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="setbase"
+        type="java.lang.Integer"
+        column="SETBASE"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SETBASE"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="setpic"
+        type="java.lang.Integer"
+        column="SETPIC"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SETPIC"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="setmail"
+        type="java.lang.Integer"
+        column="SETMAIL"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SETMAIL"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="setqq"
+        type="java.lang.Integer"
+        column="SETQQ"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SETQQ"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="setsjtel"
+        type="java.lang.Integer"
+        column="SETSJTEL"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SETSJTEL"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="settel"
+        type="java.lang.Integer"
+        column="SETTEL"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SETTEL"
+            length="2"
+        </meta>    
+    </property>
+
+    <property
+            name="setwx"
+            type="java.lang.Integer"
+            column="SETWX"
+            length="2"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="SETWX"
+            length="2"
+        </meta>
+    </property>
+
+    <property
+        name="memo"
+        type="java.lang.String"
+        column="MEMO"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MEMO"
+            length="100"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

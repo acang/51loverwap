@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--<!DOCTYPE scheduler SYSTEM "ess-j2eescheduler.dtd">-->
+
+<scheduler>
+	<task class="com.lover.TimeQuery"
+          period="300s" delay="200s"/>
+    <!-- <task class="com.lover.TimeQueryDelQiuBo"
+          period="86400s" delay="200s"/> -->
+
+</scheduler>

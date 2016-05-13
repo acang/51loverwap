@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Userother" 
+    table="USEROTHER"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="USEROTHER"
+    </meta>
+
+    <id
+        name="hyid"
+        type="java.lang.Long"
+        column="HYID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="HYID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="username"
+        type="java.lang.String"
+        column="USERNAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERNAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="userphoto1"
+        type="java.lang.String"
+        column="USERPHOTO1"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERPHOTO1"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="userphoto2"
+        type="java.lang.String"
+        column="USERPHOTO2"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERPHOTO2"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="userphoto3"
+        type="java.lang.String"
+        column="USERPHOTO3"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERPHOTO3"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="userphoto4"
+        type="java.lang.String"
+        column="USERPHOTO4"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERPHOTO4"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="userphoto5"
+        type="java.lang.String"
+        column="USERPHOTO5"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERPHOTO5"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="memo"
+        type="java.lang.String"
+        column="MEMO"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MEMO"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="qggx"
+        type="java.lang.String"
+        column="QGGX"
+        length="255"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="QGGX"
+            length="255"
+        </meta>    
+    </property>
+    <property
+        name="lxqr"
+        type="java.lang.String"
+        column="LXQR"
+        length="666"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LXQR"
+            length="666"
+        </meta>    
+    </property>
+    <property
+        name="jyly"
+        type="java.lang.String"
+        column="JYLY"
+        length="666"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="JYLY"
+            length="666"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

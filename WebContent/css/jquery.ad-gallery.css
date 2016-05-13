@@ -1,0 +1,135 @@
+.ad-gallery {
+	WIDTH: 640px
+}
+.ad-gallery {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.ad-gallery  {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.ad-gallery .ad-image-wrapper {
+	MARGIN-BOTTOM: 10px; margin-top:20px; OVERFLOW: hidden; WIDTH: 100%; POSITION: relative; HEIGHT: 700px
+}
+.ad-gallery .ad-image-wrapper .ad-loader {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; Z-INDEX: 10; LEFT: 48%; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid; POSITION: absolute; TOP: 48%
+}
+.ad-gallery .ad-image-wrapper .ad-next {
+	DISPLAY: block; Z-INDEX: 100; RIGHT: 0px; WIDTH: 25%; CURSOR: pointer; POSITION: absolute; TOP: 0px; HEIGHT: 100%
+}
+.ad-gallery .ad-image-wrapper .ad-prev {
+	DISPLAY: block; Z-INDEX: 100; LEFT: 0px; WIDTH: 25%; CURSOR: pointer; POSITION: absolute; TOP: 0px; HEIGHT: 100%
+}
+.ad-gallery .ad-image-wrapper .ad-prev {
+	BACKGROUND: url(non-existing.jpg)
+}
+.ad-gallery .ad-image-wrapper .ad-next {
+	BACKGROUND: url(non-existing.jpg)
+}
+.ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image {
+	DISPLAY: none; Z-INDEX: 101; BACKGROUND: url(../skin/leftbig.png); LEFT: 0px; WIDTH: 35px; POSITION: absolute; TOP: 40%; HEIGHT: 51px
+}
+.ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+	DISPLAY: none; Z-INDEX: 101; BACKGROUND: url(../skin/leftbig.png); LEFT: 0px; WIDTH: 35px; POSITION: absolute; TOP: 40%; HEIGHT: 51px
+}
+.ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+	RIGHT: 0px; BACKGROUND: url(../skin/rightbig.png); LEFT: auto; WIDTH: 35px; HEIGHT: 51px
+}
+.ad-gallery .ad-image-wrapper .ad-image {
+	Z-INDEX: 9; LEFT: 0px; OVERFLOW: hidden; POSITION: absolute; TOP: 0px
+}
+.ad-gallery .ad-image-wrapper .ad-image A IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	Z-INDEX: 2;
+	LEFT: 0px;
+	PADDING-BOTTOM: 7px;
+	WIDTH: 100%;
+	COLOR: #FFFFFF;
+	BOTTOM: 0px;
+	PADDING-TOP: 7px;
+	POSITION: absolute;
+	TEXT-ALIGN: left;
+	background-image: url(../skin/opa75.png);
+}
+
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description .ad-description-title {
+	DISPLAY: block
+}
+.ad-gallery .ad-controls {
+	HEIGHT: 20px
+}
+.ad-gallery .ad-info {
+	FLOAT: left
+}
+.ad-gallery .ad-slideshow-controls {
+	FLOAT: right
+}
+.ad-gallery .ad-slideshow-controls .ad-slideshow-start {
+	PADDING-LEFT: 5px; CURSOR: pointer
+}
+.ad-gallery .ad-slideshow-controls .ad-slideshow-stop {
+	PADDING-LEFT: 5px; CURSOR: pointer
+}
+.ad-gallery .ad-slideshow-controls .ad-slideshow-countdown {
+	PADDING-LEFT: 5px; FONT-SIZE: 0.9em
+}
+.ad-gallery .ad-slideshow-running .ad-slideshow-start {
+	CURSOR: default; color:#ccc;
+}
+.ad-gallery .ad-nav {
+	WIDTH: 100%; POSITION: relative
+}
+.ad-gallery .ad-forward {
+	Z-INDEX: 10; POSITION: absolute; TOP: 0px; HEIGHT: 100%
+}
+.ad-gallery .ad-back {
+	Z-INDEX: 10; POSITION: absolute; TOP: 0px; HEIGHT: 100%
+}
+ HTML .ad-gallery .ad-forward {
+	HEIGHT: 100px
+}
+.ad-gallery .ad-back {
+	HEIGHT: 100px
+}
+.ad-gallery .ad-back {
+	DISPLAY: block; BACKGROUND: url(../skin/left.png) no-repeat 0px 22px; LEFT: -20px; WIDTH: 13px; CURSOR: pointer
+}
+.ad-gallery .ad-forward {
+	DISPLAY: block; RIGHT: -20px; BACKGROUND: url(../skin/right.png) no-repeat 0px 22px; WIDTH: 13px; CURSOR: pointer
+}
+.ad-gallery .ad-nav .ad-thumbs {
+	OVERFLOW: hidden; WIDTH: 100%
+}
+.ad-gallery .ad-thumbs .ad-thumb-list {
+	FLOAT: left; WIDTH: 9000px; LIST-STYLE-TYPE: none
+}
+.ad-gallery .ad-thumbs LI {
+	PADDING-RIGHT: 5px; FLOAT: left
+}
+.ad-gallery .ad-thumbs LI A {
+	DISPLAY: block
+}
+.ad-gallery .ad-thumbs LI A IMG {
+	BORDER-RIGHT: #ccc 3px solid; BORDER-TOP: #ccc 3px solid; DISPLAY: block; BORDER-LEFT: #ccc 3px solid; BORDER-BOTTOM: #ccc 3px solid
+}
+.ad-gallery .ad-thumbs LI A.ad-active IMG {
+	BORDER-RIGHT: #616161 3px solid; BORDER-TOP: #616161 3px solid; BORDER-LEFT: #616161 3px solid; BORDER-BOTTOM: #616161 3px solid
+}
+.ad-preloads {
+	LEFT: -9000px; POSITION: absolute; TOP: -9000px
+}
+#gallery {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; BACKGROUND: #fff; PADDING-BOTTOM: 30px; MARGIN: 10px auto 0px; PADDING-TOP: 30px
+}
+#descriptions {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 10px; PADDING-LEFT: 10px; BACKGROUND: #eee; PADDING-BOTTOM: 10px; OVERFLOW: hidden; WIDTH: 640px; PADDING-TOP: 10px; POSITION: relative; HEIGHT: 50px
+}
+#descriptions .ad-image-description {
+	POSITION: absolute
+}
+#descriptions .ad-image-description .ad-description-title {
+	DISPLAY: block
+}

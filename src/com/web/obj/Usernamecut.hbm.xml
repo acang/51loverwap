@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Usernamecut" 
+    table="USERNAMECUT"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="USERNAMECUT"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="usernamecut"
+        type="java.lang.String"
+        column="USERNAMECUT"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="USERNAMECUT"
+            length="50"
+        </meta>    
+    </property>
+
+<property
+        name="reason"
+        type="java.lang.String"
+        column="REASON"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="REASON"
+            length="100"
+        </meta>    
+    </property>
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

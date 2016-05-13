@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Friend" 
+    table="FRIEND"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="FRIEND"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Integer"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Integer"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="bianhao"
+        type="java.lang.String"
+        column="BIANHAO"
+        length="10"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="BIANHAO"
+            length="10"
+        </meta>    
+    </property>
+    <property
+        name="netname"
+        type="java.lang.String"
+        column="NETNAME"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="NETNAME"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="nethttp"
+        type="java.lang.String"
+        column="NETHTTP"
+        length="500"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="NETHTTP"
+            length="500"
+        </meta>    
+    </property>
+    <property
+        name="netlogo"
+        type="java.lang.String"
+        column="NETLOGO"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="NETLOGO"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="memo"
+        type="java.lang.String"
+        column="MEMO"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="MEMO"
+            length="50"
+        </meta>    
+    </property>
+
+    <property
+            name="man"
+            type="java.lang.String"
+            column="MAN"
+            length="50"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="MAN"
+            length="50"
+        </meta>
+    </property>
+
+    <property
+            name="tel"
+            type="java.lang.String"
+            column="TEL"
+            length="100"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="TEL"
+            length="100"
+        </meta>
+    </property>
+
+    <property
+            name="applydate"
+            type="java.sql.Timestamp"
+            column="APPLYDATE"
+            length="50"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="APPLYDATE"
+            length="50"
+        </meta>
+    </property>
+
+    <property
+            name="type"
+            type="java.lang.String"
+            column="TYPE"
+            length="20"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="TYPE"
+            length="20"
+        </meta>
+    </property>
+
+    <property
+            name="state"
+            type="java.lang.String"
+            column="STATE"
+            length="20"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="STATE"
+            length="20"
+        </meta>
+    </property>
+
+    <property
+            name="applyreason"
+            type="java.lang.String"
+            column="APPLYREASON"
+            length="500"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="APPLYREASON"
+            length="500"
+        </meta>
+    </property>
+
+    <property
+            name="addlink"
+            type="java.lang.Integer"
+            column="ADDLINK"
+            length="2"
+            >
+        <meta attribute="field-description">
+            @hibernate.property
+            column="ADDLINK"
+            length="2"
+        </meta>
+    </property>
+    <!-- Associations -->
+</class>
+</hibernate-mapping>

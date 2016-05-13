@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Dic" 
+    table="DIC"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="DIC"
+    </meta>
+
+    <id
+        name="dicid"
+        type="java.lang.Long"
+        column="DICID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Long"
+            column="DICID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="dicnumber"
+        type="java.lang.String"
+        column="DICNUMBER"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="DICNUMBER"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="content"
+        type="java.lang.String"
+        column="CONTENT"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="CONTENT"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="extend1"
+        type="java.lang.String"
+        column="EXTEND1"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="EXTEND1"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="extend2"
+        type="java.lang.String"
+        column="EXTEND2"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="EXTEND2"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="extend3"
+        type="java.lang.String"
+        column="EXTEND3"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="EXTEND3"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="dictype"
+        type="java.lang.String"
+        column="DICTYPE"
+        length="5"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="DICTYPE"
+            length="5"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

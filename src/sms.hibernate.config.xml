@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='gb2312'?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 2.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+
+<hibernate-configuration>
+
+    <!-- a SessionFactory instance listed as /jndi/name -->
+    <session-factory>
+
+        <!-- properties -->
+        <property name="proxool.pool_alias">pool2</property>
+        <property name="proxool.xml">proxool2.xml</property>
+
+        <!-- mapping files -->
+        <mapping resource="com/web/obj/DbQiubo.hbm.xml"/>
+
+
+    </session-factory>
+
+</hibernate-configuration>

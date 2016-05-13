@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.web.obj.Friendsite" 
+    table="FRIENDSITE"
+>
+    <meta attribute="class-description" inherit="false">
+       @hibernate.class
+        table="FRIENDSITE"
+    </meta>
+
+    <id
+        name="id"
+        type="java.lang.Integer"
+        column="ID"
+    >
+        <meta attribute="field-description">
+           @hibernate.id
+            generator-class="assigned"
+            type="java.lang.Integer"
+            column="ID"
+
+
+        </meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="linktype"
+        type="java.lang.Integer"
+        column="LINKTYPE"
+        length="2"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LINKTYPE"
+            length="2"
+        </meta>    
+    </property>
+    <property
+        name="sitename"
+        type="java.lang.String"
+        column="SITENAME"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SITENAME"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="siteurl"
+        type="java.lang.String"
+        column="SITEURL"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SITEURL"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="siteintro"
+        type="java.lang.String"
+        column="SITEINTRO"
+        length="200"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SITEINTRO"
+            length="200"
+        </meta>    
+    </property>
+    <property
+        name="logourl"
+        type="java.lang.String"
+        column="LOGOURL"
+        length="100"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="LOGOURL"
+            length="100"
+        </meta>    
+    </property>
+    <property
+        name="siteadmin"
+        type="java.lang.String"
+        column="SITEADMIN"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SITEADMIN"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="email"
+        type="java.lang.String"
+        column="EMAIL"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="EMAIL"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="sitepassword"
+        type="java.lang.String"
+        column="SITEPASSWORD"
+        length="50"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="SITEPASSWORD"
+            length="50"
+        </meta>    
+    </property>
+    <property
+        name="isgood"
+        type="int"
+        column="ISGOOD"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ISGOOD"
+            length="1"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="isok"
+        type="int"
+        column="ISOK"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="ISOK"
+            length="1"
+            not-null="true"
+        </meta>    
+    </property>
+    <property
+        name="xuhao"
+        type="java.lang.Integer"
+        column="XUHAO"
+        length="5"
+    >
+        <meta attribute="field-description">
+           @hibernate.property
+            column="XUHAO"
+            length="5"
+        </meta>    
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>
