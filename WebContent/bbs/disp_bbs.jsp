@@ -62,10 +62,10 @@
 	 request.getSession().setAttribute("tjtype", tjtype);
 	 String vurl="http://www.51lover.org/mobile/bbs/disp_bbs-bbsid-"+bbsid;
 
- 	if("1".equals(sharetype) &&"11".equals(tjtype) &&sharehyid!=null &&sharehyid.trim().length()>0
+ if("1".equals(sharetype) &&"11".equals(tjtype) &&sharehyid!=null &&sharehyid.trim().length()>0
 			 && bbsid!=null &&bbsid!=null && bbsid.trim().length()>0){
 		 //update readnumber and gold
-		//out.println("<script language='javascript'>alert('update numbers');</script>");
+//out.println("<script language='javascript'>alert('update numbers');</script>");
 		 try
 		    {
 			 //readarticle表中不存在才会update,拒绝多次点击
@@ -102,7 +102,7 @@
 				   Readarticle ra = new Readarticle(lbid,lhyid,"lname","name",new Date(),"title",remoteip);
 				   ReadarticleMng.addReadarticle(ra);
 		     	   HbmOperator.executeSql("update sharearticle set gold = gold+1, readnumber=readnumber+1 where hyid = "+sharehyid+" and articleid ="+bbsid);
-		     	  try
+try
 		    	    {
 		     		 HbmOperator.executeSql("update bbsuser set moneynew = moneynew+1 where hyid = " + sharehyid);
 		    	    }catch(Exception e){}
@@ -218,17 +218,79 @@ String nonceStr = WeixinCreateSign.create_nonce_str();
     String signature=WeixinCreateSign.sign( nonceStr, timestamp,url);
 
 String imgUrl="http://www.51lover.org/mobile/images/img2.png";
-
+//先找SPAN 再找P
  String weixinShowContent="";
  if(articleContent!=null){
-	 weixinShowContent= LoverTools.delHTMLTag(articleContent);
-	 if(weixinShowContent!=null){
+
+/*
+  if(articleContent.contains("span") || articleContent.contains("SPAN")){
+   int spanPoint = articleContent.indexOf("span");
+   if(spanPoint>0){
+    weixinShowContent=articleContent.substring(spanPoint+4);
+    int spanEndPoint =weixinShowContent.indexOf(">");
+    if(spanEndPoint>0){
+     weixinShowContent=weixinShowContent.substring(spanEndPoint+1);
+     weixinShowContent=weixinShowContent.substring(0,weixinShowContent.indexOf("<"));
+     if(weixinShowContent!=null ){
+      weixinShowContent = weixinShowContent.trim().replaceAll("&nbsp;", "");
+      weixinShowContent = weixinShowContent.replaceAll(" ", "");
+      weixinShowContent = weixinShowContent.replaceAll("　", "");
+      if(weixinShowContent!=null &&weixinShowContent.length()>40 ){
+       weixinShowContent =weixinShowContent.substring(0,40)+"...";
+      }
+     }
+    }
+   }
+  }
+  if(weixinShowContent==null || weixinShowContent.trim().length()==0){
+    if(articleContent.contains("<p")){
+     int pPointb = articleContent.indexOf("<p");
+     int pPointe = articleContent.indexOf("</p>");
+     if(pPointe>0&& pPointe-pPointb<10){
+      pPointb = articleContent.indexOf("<p", pPointe);
+     }
+    if(pPointb>=0){
+     weixinShowContent=articleContent.substring(pPointb+2);
+     int pEndPoint =weixinShowContent.indexOf(">");
+     if(pEndPoint>0){
+      weixinShowContent=weixinShowContent.substring(pEndPoint+1);
+      weixinShowContent=weixinShowContent.substring(0,weixinShowContent.indexOf("<"));
+      if(weixinShowContent!=null ){
+       weixinShowContent = weixinShowContent.trim().replaceAll("&nbsp;", "");
+       weixinShowContent = weixinShowContent.replaceAll(" ", "");
+       weixinShowContent = weixinShowContent.replaceAll("　", "");
+       if(weixinShowContent!=null &&weixinShowContent.length()>40 ){
+        weixinShowContent =weixinShowContent.substring(0,40)+"...";
+       }
+      }
+     }
+    }
+   }
+  }
+  if(weixinShowContent==null || weixinShowContent.trim().length()==0){
+   //直接截取前40个字吧，不想多说了
+   if(articleContent!=null){
+    weixinShowContent = articleContent;
+    weixinShowContent = weixinShowContent.trim().replaceAll("&nbsp;", "");
+    weixinShowContent = weixinShowContent.replaceAll(" ", "");
+    weixinShowContent = weixinShowContent.replaceAll("　", "");
+    if(weixinShowContent!=null &&weixinShowContent.length()>40 ){
+     weixinShowContent =weixinShowContent.substring(0,40)+"...";
+    }
+   }
+   
+  }
+*/
+
+weixinShowContent= LoverTools.delHTMLTag(articleContent);
+if(weixinShowContent!=null){
 		 weixinShowContent=weixinShowContent.replaceAll("&nbsp;", "").trim();
-		 weixinShowContent=weixinShowContent.replaceAll("\"", "").trim();
+		weixinShowContent=weixinShowContent.replaceAll("\"", "").trim();
 		 weixinShowContent=weixinShowContent.replaceAll(" ", "").trim();
 		 weixinShowContent=weixinShowContent.replaceAll("\\r", "").trim();
 		 weixinShowContent=weixinShowContent.replaceAll("\\n", "").trim();
 	 }
+
 	 if(weixinShowContent==null || weixinShowContent.trim().length()<1){
 		 weixinShowContent=topicBb.getTitle();
 	 }else if(weixinShowContent.length()>40){
@@ -249,8 +311,6 @@ String imgUrl="http://www.51lover.org/mobile/images/img2.png";
     }
    }
   }
-  
- // out.println("<script language='javascript'>alert('"+imgUrl+"');</script>");  
  }
 
 
@@ -270,6 +330,7 @@ var lineLink = "<%=vurl+"&sharetype=1"%>";
 var descContent = "<%=weixinShowContent%>";  
 var shareTitle = "<%=topicBb.getTitle()%>";  
 var appid = ''; 
+
 
 wx.config({
     debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
@@ -299,7 +360,7 @@ var ShareAppData = {
     	   window.location.href="sharesuccess.jsp?articleid=<%=topicBb.getId()%>&topictitle=<%=topicBb.getTitle()%>";
       }
     };
-var ShareTimeLineData = {
+ var ShareTimeLineData = {
 	      title: shareTitle, // 分享标题
 	      link: lineLink,
 	      imgUrl: imgUrl,
@@ -312,7 +373,7 @@ var ShareTimeLineData = {
 	    };
   wx.onMenuShareAppMessage(ShareAppData);
   wx.onMenuShareTimeline(ShareTimeLineData); 
-  wx.onMenuShareQQ(ShareAppData);
+wx.onMenuShareQQ(ShareAppData);
 });
 </script>
 
@@ -379,9 +440,6 @@ var ShareTimeLineData = {
         </div>
         
         <div class="clearfix"></div>
-        
-        
-        <!-- 交友动态内容 -->
         <div class="hty_txt">
             <p><%=articleContent%></p>
             
@@ -395,12 +453,12 @@ var ShareTimeLineData = {
         <div class="hty_pl">
             <div class="h_pl_nav">会员评论</div>
         </div>
-        <form name="form1" method="post" class="h_pl_txt" style="height:150px" action="addretopic.jsp" >
+        <form name="form1" method="post" class="h_pl_txt" style="height:140px" action="addretopic.jsp" >
         <input type="hidden" name="bizaction" value="01">
         <input type="hidden" name="isfb" value=""/>
         <input type="hidden" name="bbsid" value="<%=bbsid%>"/>
         <input type="hidden" name="url" value="disp_bbs-bbsid-<%=bbsid%>.htm"/>
-				<textarea id="content" name="content" class="h_plt_t" style="height:65px;" placeholder="发表留言"></textarea>			
+				<textarea id="content" name="content" class="h_plt_t"  style="height:65px;" placeholder="发表留言"></textarea>			
              <div class="h_plt_fb">发表</div> 
           </form>
           
@@ -499,11 +557,11 @@ var ShareTimeLineData = {
 
 <%@ include file="bottom2.jsp"%>
   <%@ include file="bottom.jsp"%>
-<% /* if (loginUser==null){
+<% /*if (loginUser==null){
    if(sharehyid!=null && !"".equals(sharehyid)&& !"0".equals(sharehyid)){
        out.println("<script language='javascript'>function myfunction(){ alert('请点击下方交友官网注册新会员！'); } window.onload=myfunction;</script>"); 
       }
-  } */ %>
+  }*/ %>
 </body>
 <form id="zanForm" name="zanForm"  method="post" action="../zan_do.jsp"  >
     <input type="hidden" id="bbsReId" name="bbsReId" value="">
