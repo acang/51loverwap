@@ -159,7 +159,7 @@ img{ border:none;}
 
 
 .hty_txt{width:90%; margin:0 auto; padding:0 2%; margin-top:10px;}
-.hty_txt p{font-size:2em; line-height:22px; color:#666; text-align:left; text-indent:24px;}
+.hty_txt p{font-size:2em; line-height:22px; color:#666; text-align:left;}
 .htyimg{width:100%; text-align:center; margin:5% 0;}
 .htyimg img{display:inline-block;max-width:100%;}
 .hty_tqw{width:100%; text-align:center; margin:0 0 15% 0; height:40px; line-height:40px; color:#666; font-size:2.2em; position:relative;}

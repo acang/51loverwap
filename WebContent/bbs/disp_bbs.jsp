@@ -383,7 +383,7 @@ var ShareTimeLineData = {
         
         <!-- ½»ÓÑ¶¯Ì¬ÄÚÈÝ -->
         <div class="hty_txt">
-            <p style="text-indent:0px;"><%=articleContent%></p>
+            <p><%=articleContent%></p>
             
             <div class="hty_tqw" style="display:none;">
               <img src="../images/xq.png" />
