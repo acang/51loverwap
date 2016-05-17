@@ -440,7 +440,7 @@ wx.onMenuShareQQ(ShareAppData);
         </div>
         
         <div class="clearfix"></div>
-        <div class="hty_txt">
+        <div class="hty_txt" style="font-family:ËÎÌו;">
             <p><%=articleContent%></p>
             
             <div class="hty_tqw" style="display:none;">
