@@ -84,7 +84,7 @@
 							style="float: right; margin-right: 10%;" />
 				</form>
 				<div style="color: #fff">
-					<a href="paymoney_zxltest.jsp">test</a>
+					<a href="paymoney_zxltest.jsp"></a>
 				</div>
 			</div>
 		</div>
